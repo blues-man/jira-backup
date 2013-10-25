@@ -1,7 +1,7 @@
 jira-backup
 ===========
 
-A tool for on-demand jira backups with cURL, suitable for fresh Mac OS X enviroments (and many others)
+A very simple tool for on-demand jira backups with cURL, suitable for fresh Mac OS X enviroments (and many others)
 
 usage: ./jira_backup.sh [--force, --debug, --help] 
 
