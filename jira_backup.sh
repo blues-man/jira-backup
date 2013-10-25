@@ -17,7 +17,7 @@ EMAIL_DOMAIN="domain.tld"
 
 OPTION=$1
 SKIP_BACKUP=0
-SKIP_MAIL=1
+SKIP_MAIL=0
 DEBUG=0
 
 TODAY=`date +%Y%m%d`
