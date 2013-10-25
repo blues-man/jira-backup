@@ -9,6 +9,6 @@ usage: ./jira_backup.sh [--force, --debug, --help]
       --debug : Verbose cURL output
       --help  : Print an help
 
-Fill empty and template var to configure the script, and if you want email notifications, change
+Fill empty and template var to configure the script, and if you don't want email notifications, change
 
-SKIP_MAIL=0
+SKIP_MAIL=1
