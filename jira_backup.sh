@@ -46,18 +46,19 @@ fi
 
 
 function send_mail() {
-  if [ $SKIP_MAIL -eq 1 ]; then
-  		return 0
-  fi
-	STATUS=$1
-	DATE=$(date)
-	SUBJECT="[${STATUS}] Jira Backup system on $DATE"
-	BODY=$2
+
+if [ $SKIP_MAIL -eq 1 ]; then
+  	return 0
+fi
+STATUS=$1
+DATE=$(date)
+SUBJECT="[${STATUS}] Jira Backup system on $DATE"
+BODY=$2
 
 sendmail "$EMAIL_NOTIFICATION" <<EOF
-	subject:$SUBJECT
-	from:jira@$EMAIL_DOMAIN
-	$BODY
+subject:$SUBJECT
+from:jira@$EMAIL_DOMAIN
+$BODY
 EOF
 
 }
