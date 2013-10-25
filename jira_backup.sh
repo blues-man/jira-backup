@@ -108,7 +108,7 @@ else
 		send_mail "OK" "Backup JIRA-backup-${TODAY}.zip downloaded and intact."
 	else
 		echo "Backup JIRA-backup-${TODAY}.zip corrupted, retry"
-		send_mail "ERROR" "Backup JIRA-backup-${TODAY}.zip downloaded and intact."
+		send_mail "ERROR" "Backup JIRA-backup-${TODAY}.zip downloaded with errors."
 
 	fi
 fi
