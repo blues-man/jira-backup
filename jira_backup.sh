@@ -100,7 +100,7 @@ if [ $OK -ne 0 ]; then
 	echo "JIRA-backup-${TODAY}.zip not found"
 	exit
 else
- 	echo "Downloading backup JIRA-backup-${TODAY}.zip ..."
+	echo "Downloading backup JIRA-backup-${TODAY}.zip ..."
 	curl -u $USERNAME:$PASSWORD https://${INSTANCE}/webdav/backupmanager/JIRA-backup-${TODAY}.zip -O $LOCATION 2>/dev/null
 	integrity=$(unzip -t $LOCATION/JIRA-backup-${TODAY}.zip)
 	if [ $? -eq 0 ]; then
