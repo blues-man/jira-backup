@@ -5,7 +5,7 @@
 # --debug : Verbose cURL output
 # --help  : Print an help
 # Author: Natale Vinto<ebballon@gmail.com> 
-# based on Atlassian wget based script https://confluence.atlassian.com/display/ONDEMANDKB/Automatic+backups+for+JIRA+OnDemand
+# based on Atlassian wget script https://confluence.atlassian.com/display/ONDEMANDKB/Automatic+backups+for+JIRA+OnDemand
 
 USERNAME=""
 PASSWORD=""
