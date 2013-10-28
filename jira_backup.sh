@@ -27,7 +27,7 @@ if [ "$OPTION" = "--force" ]; then
 	SKIP_BACKUP=1;
 elif [ "$OPTION" = "--help" ]; then
 	echo "Usage: jira_backup.sh        # Remote backup and download"
-	echo "	   : jira_backup.sh --force # Skip backup procedure and download only ZIP"
+	echo "     : jira_backup.sh --force # Skip backup procedure and download only ZIP"
 	exit
 elif [ "$OPTION" = "--debug" ]; then
 	DEBUG=1
