@@ -28,7 +28,7 @@ SKIP_MAIL=0
 # Change to 1 to add always --debug option
 DEBUG=0
 
-# Backups are saved in JIRA-backup-(YYYY-mm-dd).zip file
+# Backups are saved in JIRA-backup-(YYYYmmdd).zip file
 TODAY=`date +%Y%m%d`
 
 
