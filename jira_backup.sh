@@ -1,7 +1,7 @@
 #!/bin/bash
 # A jira backup utility based on cURL, suitable for fresh Mac Enviroments (and many others!)
 # usage: ./jira_backup.sh [--skip, --debug, --help] 
-# --force : Skip remote backup procedure
+# --skip : Skip remote backup procedure
 # --debug : Verbose cURL output
 # --help  : Print an help
 # Author: Natale Vinto<ebballon@gmail.com> 
