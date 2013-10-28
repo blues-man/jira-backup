@@ -7,19 +7,28 @@
 # Author: Natale Vinto<ebballon@gmail.com> 
 # based on Atlassian wget script https://confluence.atlassian.com/display/ONDEMANDKB/Automatic+backups+for+JIRA+OnDemand
 
+# Put your Jira account's credentials
 USERNAME=""
 PASSWORD=""
+# Put your Jira instance URL
 INSTANCE=".atlassian.net"
+# Change to a path if you want to download backup elsewhere
 LOCATION=`pwd`
 
+# Change to a real email where to send download alerts
 EMAIL_NOTIFICATION="foo@domain.tld"
+# Put your email server domain or what you want, the e-mail sender
+# would be something like: jira@yourdomain.tld
 EMAIL_DOMAIN="domain.tld"
 
 OPTION=$1
 SKIP_BACKUP=0
+# Change to 1 if you don't want email notifications
 SKIP_MAIL=0
+# Change to 1 to add always --debug option
 DEBUG=0
 
+# Backups are saved in JIRA-backup-(YYYY-mm-dd).zip file
 TODAY=`date +%Y%m%d`
 
 
